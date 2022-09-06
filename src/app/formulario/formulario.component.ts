@@ -12,4 +12,13 @@ export class FormularioComponent {
   sumar(): void {
     this.valorRespuesta.emit(this.valorA + this.valorB);
   }
+  restar(): void {
+    this.valorRespuesta.emit(this.valorA - this.valorB);
+  }
+  multiplicar(): void {
+    this.valorRespuesta.emit(this.valorA * this.valorB);
+  }
+  dividir(): void{
+    this.valorRespuesta.emit(this.valorA / this.valorB);
+  }
 }
